@@ -973,34 +973,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.sensor.communicate@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 prebuilt_rfsa {
     name: "vendor_lib_rfsa_adsp_bm3a68v08s11n29_bin",
     filename: "bm3a68v08s11n29.bin",
@@ -9490,56 +9462,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.sensor.citsensorservice@2.0-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libhardware",
-                "libbase",
-                "libssccalapi@2.0",
-                "libsnsapi",
-                "vendor.xiaomi.sensor.citsensorservice@1.1",
-                "vendor.xiaomi.sensor.citsensorservice@2.0",
-                "android.frameworks.sensorservice@1.0",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "android.hardware.graphics.common@1.2",
-                "vendor.display.config@2.0",
-                "libqdutils",
-                "vendor.qti.hardware.display.composer@3.0",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libdisplayconfig.qti",
-                "libtinyxml2-v34",
-                "libjsoncpp",
-                "libmisight",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libAF",
     owner: "xiaomi",
     strip: {
@@ -15128,24 +15050,6 @@ prebuilt_etc_xml {
     device_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "vendor.xiaomi.sensor.citsensorservice@2.0-service.xml",
-    owner: "xiaomi",
-    src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@2.0-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.xiaomi.sensor.communicate@1.0_manifest.xml",
-    owner: "xiaomi",
-    src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.sensor.communicate@1.0_manifest.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "android.hardware.camera.provider@2.7-virtual-camera-service",
     owner: "xiaomi",
@@ -15246,79 +15150,6 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "liblog",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.xiaomi.sensor.citsensorservice@2.0-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libssccalapi@2.0",
-                "libhidlbase",
-                "libhidltransport",
-                "vendor.xiaomi.sensor.citsensorservice@1.1",
-                "vendor.xiaomi.sensor.citsensorservice@2.0",
-                "android.frameworks.sensorservice@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.xiaomi.sensor.communicate@1.0-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service",
-            ],
-            shared_libs: [
-                "libsensor_cal@2.0",
-                "vendor.xiaomi.sensor.citsensorservice@1.1",
-                "vendor.xiaomi.sensor.citsensorservice@2.0",
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "liblog",
-                "android.frameworks.sensorservice@1.0",
-                "vendor.xiaomi.sensor.communicate@1.0",
-                "libjsoncpp",
                 "libc++",
                 "libc",
                 "libm",

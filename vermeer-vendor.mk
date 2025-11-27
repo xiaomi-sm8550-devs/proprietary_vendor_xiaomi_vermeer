@@ -536,7 +536,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomiSceneDetection.xml \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/xmi_slmt_4x_1080p.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/xmi_slmt_4x_1080p.dlc \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/xmi_slmt_4x_720p.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/xmi_slmt_4x_720p.dlc \
-    vendor/xiaomi/vermeer/proprietary/odm/etc/cit_param_config.json:$(TARGET_COPY_OUT_ODM)/etc/cit_param_config.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/df_default.xml:$(TARGET_COPY_OUT_ODM)/etc/df_default.xml \
     vendor/xiaomi/vermeer/proprietary/odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/cct_pcc.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/cct_pcc.txt \
     vendor/xiaomi/vermeer/proprietary/odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/miLutInfo.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/miLutInfo.txt \
@@ -567,8 +566,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/mi_gc_3.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/mi_gc_3.txt \
     vendor/xiaomi/vermeer/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_n11_42_02_0a_cmd_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_n11_42_02_0a_cmd_mode_dsc_dsi_panel.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.camera.provider-service_64.rc \
-    vendor/xiaomi/vermeer/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc \
-    vendor/xiaomi/vermeer/proprietary/odm/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc \
     vendor/xiaomi/vermeer/proprietary/odm/etc/mdss_dsi_n11_42_02_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/mdss_dsi_n11_42_02_0a_dsc_cmd_mi.xml \
     vendor/xiaomi/vermeer/proprietary/odm/etc/sensors/config/ak7323.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/ak7323.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/sensors/config/chre_dynamic_sensors.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/chre_dynamic_sensors.json \
@@ -761,7 +758,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.campostproc@1.0 \
     vendor.xiaomi.hardware.miface@1.0 \
     vendor.xiaomi.hardware.quickcamera@1.0 \
-    vendor.xiaomi.sensor.communicate@1.0 \
     vendor_lib_rfsa_adsp_bm3a68v08s11n29_bin \
     vendor_lib_rfsa_adsp_bm3a68v08s11n30_bin \
     vendor_lib_rfsa_adsp_bm3a68v08s11n35_bin \
@@ -1058,7 +1054,6 @@ PRODUCT_PACKAGES += \
     com.qti.chi.offline \
     com.qti.chi.override \
     fingerprint.goodix_fod.default \
-    vendor.xiaomi.sensor.citsensorservice@2.0-impl \
     libAF \
     libAncHumanVideoBokehV4 \
     libHISCppAlgos \
@@ -1245,10 +1240,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.quickcamera@1.0-service.xml \
     vendor.xiaomi.hardware.vcamera.provider.xml \
     vendor.xiaomi.camera.aon-impl.xml \
-    vendor.xiaomi.sensor.citsensorservice@2.0-service.xml \
-    vendor.xiaomi.sensor.communicate@1.0_manifest.xml \
     android.hardware.camera.provider@2.7-virtual-camera-service \
     vendor.xiaomi.hardware.quickcamera@1.0-service \
-    vendor.qti.camera.provider-service_64 \
-    vendor.xiaomi.sensor.citsensorservice@2.0-service \
-    vendor.xiaomi.sensor.communicate@1.0-service
+    vendor.qti.camera.provider-service_64
