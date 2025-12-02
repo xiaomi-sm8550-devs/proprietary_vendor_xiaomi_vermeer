@@ -644,10 +644,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/firmware/CAMERA_ICP_170.elf:$(TARGET_COPY_OUT_ODM)/firmware/CAMERA_ICP_170.elf \
     vendor/xiaomi/vermeer/proprietary/odm/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw882xx_acf.bin \
     vendor/xiaomi/vermeer/proprietary/odm/firmware/goodix_cfg_group_vermeer.bin:$(TARGET_COPY_OUT_ODM)/firmware/goodix_cfg_group_vermeer.bin \
-    vendor/xiaomi/vermeer/proprietary/odm/firmware/goodix_cfg_group_vermeer_SelfDis.bin:$(TARGET_COPY_OUT_ODM)/firmware/goodix_cfg_group_vermeer_SelfDis.bin \
     vendor/xiaomi/vermeer/proprietary/odm/firmware/goodix_firmware_vermeer.bin:$(TARGET_COPY_OUT_ODM)/firmware/goodix_firmware_vermeer.bin \
-    vendor/xiaomi/vermeer/proprietary/odm/firmware/goodix_test_limits_255.csv:$(TARGET_COPY_OUT_ODM)/firmware/goodix_test_limits_255.csv \
-    vendor/xiaomi/vermeer/proprietary/odm/firmware/vermeer_thp_config.ini:$(TARGET_COPY_OUT_ODM)/firmware/vermeer_thp_config.ini \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.sensormodule.vermeer_aac_gc16b3_front_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.vermeer_aac_gc16b3_front_ii.bin \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.sensormodule.vermeer_aac_ov16a1q_front.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.vermeer_aac_ov16a1q_front.bin \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.sensormodule.vermeer_aac_ovx8000_wide_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.vermeer_aac_ovx8000_wide_ii.bin \
