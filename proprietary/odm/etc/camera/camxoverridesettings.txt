@@ -1,6 +1,8 @@
 # N11 setting file
 multiCameraLogicalXMLFile=vermeer.xml
 
+#Resort the sensor data
+enableResortSensorData=TRUE
 enableTxtLogging=1
 offlineLogNumber=15
 offlineLoggerEnableBackupLog=FALSE
@@ -268,6 +270,8 @@ numPCRsBeforeStreamOn=1
 #early init wide module
 isEarlysettingsEnable=TRUE
 
+#eeprom backup
+enableEEPROMBackup=TRUE
 enableEEPROMGolden=TRUE
 
 #override Flash Current
@@ -346,3 +350,8 @@ isSupportSecondTuningbin=TRUE
 
 #camera module fool-proof solution
 enableModuleRegionDistinguish=TRUE
+
+#Enable Sensor Probe Retry
+EnableSensorProbeOptimization=TRUE
+SensorModuleRetryTimes=3
+sensorModuleNumber=6
