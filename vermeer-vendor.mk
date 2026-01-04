@@ -44,7 +44,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/beauty_config_gl_8g.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_config_gl_8g.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/beauty_style_nude.cng:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_style_nude.cng \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/bokehParams.json:$(TARGET_COPY_OUT_ODM)/etc/camera/bokehParams.json \
-    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/cameradfx_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameradfx_config.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/camxoverridesettings.txt \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/com.xiaomi.dcal.wu.golden:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wu.golden \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/com.xiaomi.dcal.wu.golden2:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wu.golden2 \
@@ -666,8 +666,37 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/fdconfigsecure.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigsecure.bin \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigvideo.bin \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigvideolite.bin \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/kalama_cdp/CDP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_cdp/CDP_acdb_cal.acdb \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/kalama_cdp/CDP_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_cdp/CDP_workspaceFileXml.qwsp \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/kalama_grd/GRD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_grd/GRD_acdb_cal.acdb \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/kalama_grd/GRD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_grd/GRD_workspaceFileXml.qwsp \
     vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/kalama_mtp/Tutu_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_mtp/Tutu_acdb_cal.acdb \
     vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/kalama_mtp/Tutu_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_mtp/Tutu_workspaceFileXml.qwsp \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/kalama_qrd/QRD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_qrd/QRD_acdb_cal.acdb \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/kalama_qrd/QRD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_qrd/QRD_workspaceFileXml.qwsp \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.2_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.2_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.3_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.3_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd \
+    vendor/xiaomi/vermeer/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd \
     vendor/xiaomi/vermeer/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
     vendor/xiaomi/vermeer/proprietary/vendor/etc/df_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/df_default.xml \
     vendor/xiaomi/vermeer/proprietary/vendor/etc/display/3dlut-pt-onnx-ptq-htp-fp16.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/display/3dlut-pt-onnx-ptq-htp-fp16.dlc \
