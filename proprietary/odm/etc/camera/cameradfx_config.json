@@ -1,0 +1,73 @@
+{
+    "SENSORNAME_ROLEID_MAP":[
+        {
+            "sensorName": "vermeer_ofilm_ovx8000_wide_i",
+            "roleID": 0
+        },
+        {
+            "sensorName": "vermeer_ofilm_ovx8000_gt24p128f_wide_i_eeprom",
+            "roleID": 0
+        },
+        {
+            "sensorName": "vermeer_ofilm_ovx8000_gt9764_wide_i_actuator",
+            "roleID": 0
+        },
+        {
+            "sensorName": "vermeer_wide_ak7323_ois_i",
+            "roleID": 0
+        },
+        {
+            "sensorName": "vermeer_aac_ovx8000_wide_ii",
+            "roleID":0
+        },
+        {
+            "sensorName": "vermeer_aac_ovx8000_p24c128e_wide_ii_eeprom",
+            "roleID":0
+        },
+        {
+            "sensorName": "vermeer_aac_ovx8000_gt9764_wide_ii_actuator",
+            "roleID": 0
+        },
+        {
+            "sensorName": "vermeer_wide_ak7323_ois_ii",
+            "roleID": 0
+        },
+        {
+            "sensorName": "vermeer_aac_ov16a1q_front",
+            "roleID": 1
+        },
+        {
+            "sensorName": "vermeer_aac_ov16a1q_gt24p64e_front_eeprom",
+            "roleID": 1
+        },
+        {
+            "sensorName": "vermeer_aac_gc16b3_front_ii",
+            "roleID": 1
+        },
+        {
+            "sensorName": "vermeer_aac_gc16b3_gt24p64e_front_ii_eeprom",
+            "roleID": 1
+        },
+        {
+            "sensorName": "vermeer_ofilm_imx355_ultra",
+            "roleID": 21
+        },
+        {
+            "sensorName": "vermeer_ofilm_imx355_gt24p64e_ultra_eeprom",
+            "roleID": 21
+        },
+        {
+            "sensorName": "vermeer_ofilm_gc02m1_macro",
+            "roleID": 22
+        },
+        {
+            "sensorName": "vermeer_ofilm_gc02m1_p24c64f_macro_eeprom",
+            "roleID": 22
+        }
+    ],
+
+    "TOMBSTONE_FUNCTION":{
+        "isEnable": true,
+        "fileNumber": 20
+    }
+}

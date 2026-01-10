@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/beauty_style_nude.cng:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_style_nude.cng \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/bokehParams.json:$(TARGET_COPY_OUT_ODM)/etc/camera/bokehParams.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/cameradfx_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameradfx_config.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/camxoverridesettings.txt \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/com.xiaomi.dcal.wu.golden:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wu.golden \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/com.xiaomi.dcal.wu.golden2:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wu.golden2 \
@@ -1014,6 +1015,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.mcx.policy.xr \
     com.qualcomm.qti.mcx.usecase.extension \
+    com.xiaomi.camdfx \
     com.xiaomi.camhal.overlap \
     com.xiaomi.camhal.submodel.camxfrag \
     com.xiaomi.camhal.submodel.chifrag \
