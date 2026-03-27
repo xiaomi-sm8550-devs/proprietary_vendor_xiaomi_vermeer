@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/beauty_style_nude.cng:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_style_nude.cng \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/bokehParams.json:$(TARGET_COPY_OUT_ODM)/etc/camera/bokehParams.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/cameracustomize.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameracustomize.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/cameradfx_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameradfx_config.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/camxoverridesettings.txt \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/com.xiaomi.dcal.wu.golden:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wu.golden \
@@ -447,13 +448,40 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/vermeer_ofilm_gc02m1_p24c64f_macro_eeprom.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/vermeer_ofilm_gc02m1_p24c64f_macro_eeprom.bin \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/vermeer_ofilm_imx355_gt24p64e_ultra_eeprom.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/vermeer_ofilm_imx355_gt24p64e_ultra_eeprom.bin \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/vermeer_ofilm_ovx8000_gt24p128f_wide_i_eeprom.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/vermeer_ofilm_ovx8000_gt24p128f_wide_i_eeprom.bin \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/102_SummerDay.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/102_SummerDay.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/103_Fantasy.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/103_Fantasy.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/104_Meet.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/104_Meet.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/105_WindSing.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/105_WindSing.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/106_Lost.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/106_Lost.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/107_Central.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/107_Central.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/108_NorthernEurope.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/108_NorthernEurope.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/109_Rome.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/109_Rome.png \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/110_BlackGold.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/110_BlackGold.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/111_GreenOrange.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/111_GreenOrange.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/112_CyberPunk.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/112_CyberPunk.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/113_BlackIce.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/113_BlackIce.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/121_Bleach.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/121_Bleach.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/122_Thriller.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/122_Thriller.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/123_TealOrange.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/123_TealOrange.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/124_JapaneseStyle.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/124_JapaneseStyle.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/125_Latin.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/125_Latin.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/126_Fantasy2.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/126_Fantasy2.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/127_Creamy.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/127_Creamy.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/128_Sepia.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/128_Sepia.png \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/129_LeicaVivid.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/129_LeicaVivid.png \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/130_LeicaNatural.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/130_LeicaNatural.png \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/131_MonochromeTrue.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/131_MonochromeTrue.png \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/132_MonochromeHighContrast.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/132_MonochromeHighContrast.png \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/133_MonochromeBrown.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/133_MonochromeBrown.png \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/134_MonochromeBlue.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/134_MonochromeBlue.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/135_Classical.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/135_Classical.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/136_Filene.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/136_Filene.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/137_GreenNight.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/137_GreenNight.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/138_LiteratureAndArt.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/138_LiteratureAndArt.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/139_OrangeHoney.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/139_OrangeHoney.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/140_Romance.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/140_Romance.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/141_FR500.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/141_FR500.png \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/142_FE250.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/142_FE250.png \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/144_RedHero.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/144_RedHero.png \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/146_TactileGreen.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/146_TactileGreen.png \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/videofilter/148_Mild.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/148_Mild.png \
@@ -505,6 +533,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomiSceneDetection.xml \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/xmi_slmt_4x_1080p.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/xmi_slmt_4x_1080p.dlc \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/xmi_slmt_4x_720p.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/xmi_slmt_4x_720p.dlc \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/cit_param_config.json:$(TARGET_COPY_OUT_ODM)/etc/cit_param_config.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/df_default.xml:$(TARGET_COPY_OUT_ODM)/etc/df_default.xml \
     vendor/xiaomi/vermeer/proprietary/odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/cct_pcc.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/cct_pcc.txt \
     vendor/xiaomi/vermeer/proprietary/odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/miLutInfo.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/miLutInfo.txt \
@@ -1031,7 +1060,7 @@ PRODUCT_PACKAGES += \
     libAncHumanVideoBokehV4 \
     libHISCppAlgos \
     libMiMotion \
-    libMiVideoFilter \
+    libMiPhotoFilter \
     libTrueSight \
     libXMFaceFocus \
     libaidenoiser \

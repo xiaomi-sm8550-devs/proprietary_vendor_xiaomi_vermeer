@@ -3215,7 +3215,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcom.xiaomi.mawutilsold",
                 "libui",
-                "libMiVideoFilter",
+                "libMiPhotoFilter",
                 "libc++",
                 "libc",
                 "libm",
@@ -9647,7 +9647,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libMiVideoFilter",
+    name: "libMiPhotoFilter",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -9655,7 +9655,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/odm/lib64/libMiVideoFilter.so",
+                "proprietary/odm/lib64/libMiPhotoFilter.so",
             ],
             shared_libs: [
                 "liblog",
@@ -9664,6 +9664,7 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libz",
                 "libm",
+                "libc++_shared",
                 "libdl",
                 "libc",
             ],

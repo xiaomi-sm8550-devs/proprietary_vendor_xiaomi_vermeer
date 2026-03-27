@@ -355,3 +355,6 @@ enableModuleRegionDistinguish=TRUE
 EnableSensorProbeOptimization=TRUE
 SensorModuleRetryTimes=3
 sensorModuleNumber=6
+
+WatermarkVersion=3.002
+FilterVersion=3.002
