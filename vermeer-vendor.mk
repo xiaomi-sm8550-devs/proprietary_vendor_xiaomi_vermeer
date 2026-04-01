@@ -728,8 +728,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.7-impl-vcamera \
     vendor.xiaomi.hardware.quickcamera@1.0-impl \
     libPlatformValidatorShared \
-    libSNPE \
-    libSNPESample \
     libSnpeDspV65Stub \
     libSnpeDspV66Stub \
     libSnpeHta \
@@ -741,10 +739,7 @@ PRODUCT_PACKAGES += \
     libcalculator \
     libcalculator_htp \
     libcamxexternalformatutils \
-    libeyecare \
     libhta_hexagon_runtime_snpe \
-    libmi-stc-HW-modulate \
-    libmiSensorCtrl \
     libmi_dspp \
     libmicuttlefish_fs \
     libmivsock_utils \
@@ -1202,7 +1197,6 @@ PRODUCT_PACKAGES += \
     libremosaic_wrapper \
     libremosaiclib \
     librfs_warp \
-    libsdr2hdr \
     libsensor_cal@2.0 \
     libsfeShiftExtrapolation \
     libshadowhook \
@@ -1213,7 +1207,6 @@ PRODUCT_PACKAGES += \
     libubifocus \
     libvideoBokeh \
     libvideoml \
-    libvideomode \
     libvidhance \
     libvidhance_active_ois \
     libvidhance_face_stabilizer \

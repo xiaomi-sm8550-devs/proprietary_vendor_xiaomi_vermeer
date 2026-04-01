@@ -157,60 +157,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libSNPE",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libSNPE.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "liblog",
-                "libc++_shared",
-                "libc",
-                "libm",
-                "libEGL",
-                "libGLESv2",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libSNPESample",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libSNPESample.so",
-            ],
-            shared_libs: [
-                "libSNPE",
-                "libc++_shared",
-                "libc",
-                "libm",
-                "libdl",
-                "libGLESv2",
-                "libEGL",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libSnpeDspV65Stub",
     owner: "xiaomi",
     strip: {
@@ -492,37 +438,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libeyecare",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libeyecare.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libbinder",
-                "libhidltransport",
-                "libhidlbase",
-                "libmiXmlParser",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libhta_hexagon_runtime_snpe",
     owner: "xiaomi",
     strip: {
@@ -539,74 +454,6 @@ cc_prebuilt_library_shared {
                 "libcdsprpc",
                 "libdl",
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmi-stc-HW-modulate",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmi-stc-HW-modulate.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libdisplaydebug",
-                "libsdm-color",
-                "libbinder",
-                "libtinyxml2_1",
-                "libsdmutils",
-                "libqservice",
-                "libstagefright_foundation",
-                "libxml2",
-                "libmiXmlParser",
-                "libeyecare",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmiSensorCtrl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmiSensorCtrl.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libbinder",
-                "libhidltransport",
-                "libhidlbase",
-                "android.frameworks.sensorservice@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -14129,40 +13976,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsdr2hdr",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libsdr2hdr.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libbinder",
-                "libhidltransport",
-                "libhidlbase",
-                "libmiSensorCtrl",
-                "libmiXmlParser",
-                "android.frameworks.sensorservice@1.0",
-                "libmi-stc-HW-modulate",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsensor_cal@2.0",
     owner: "xiaomi",
     strip: {
@@ -14478,40 +14291,6 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libbitmlenginev2",
                 "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvideomode",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libvideomode.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libbinder",
-                "libhidltransport",
-                "libhidlbase",
-                "libmiXmlParser",
-                "android.frameworks.sensorservice@1.0",
-                "libmi_dspp",
-                "libsdr2hdr",
                 "libc++",
                 "libc",
                 "libm",
