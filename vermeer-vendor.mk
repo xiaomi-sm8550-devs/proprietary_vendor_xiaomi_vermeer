@@ -44,9 +44,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/beauty_config_gl_8g.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_config_gl_8g.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/beauty_style_nude.cng:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_style_nude.cng \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/bokehParams.json:$(TARGET_COPY_OUT_ODM)/etc/camera/bokehParams.json \
-    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/cameracustomize.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameracustomize.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/cameradfx_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameradfx_config.json \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/cameraopt_reclaim.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt_reclaim.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/camxoverridesettings.txt \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/com.xiaomi.dcal.wu.golden:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wu.golden \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/com.xiaomi.dcal.wu.golden2:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wu.golden2 \
