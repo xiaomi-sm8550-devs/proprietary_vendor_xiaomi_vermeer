@@ -86,8 +86,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/mi_tuning/default.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mi_tuning/default.bin \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/mi_tuning/vermeer_aac_ovx8000_wide_ii.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mi_tuning/vermeer_aac_ovx8000_wide_ii.bin \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/mi_tuning/vermeer_ofilm_gc02m1_macro.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mi_tuning/vermeer_ofilm_gc02m1_macro.bin \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/mi_tuning/vermeer_ofilm_gc02m1_macro_light_ii.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mi_tuning/vermeer_ofilm_gc02m1_macro_light_ii.bin \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/mi_tuning/vermeer_ofilm_imx355_ultra.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mi_tuning/vermeer_ofilm_imx355_ultra.bin \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/mi_tuning/vermeer_ofilm_imx355_ultra_light_ii.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mi_tuning/vermeer_ofilm_imx355_ultra_light_ii.bin \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/mi_tuning/vermeer_ofilm_ovx8000_wide_i.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mi_tuning/vermeer_ofilm_ovx8000_wide_i.bin \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/mi_tuning/vermeer_ofilm_ovx8000_wide_i_light_ii.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mi_tuning/vermeer_ofilm_ovx8000_wide_i_light_ii.bin \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/miai_hdr_config.yaml:$(TARGET_COPY_OUT_ODM)/etc/camera/miai_hdr_config.yaml \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/miai_hdr_raw_classic_config.yaml:$(TARGET_COPY_OUT_ODM)/etc/camera/miai_hdr_raw_classic_config.yaml \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/miai_hdr_raw_denoise_st_classic_config.yaml:$(TARGET_COPY_OUT_ODM)/etc/camera/miai_hdr_raw_denoise_st_classic_config.yaml \
