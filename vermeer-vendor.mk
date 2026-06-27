@@ -1112,7 +1112,6 @@ PRODUCT_PACKAGES += \
     libceres \
     libchifeature2 \
     libchilog \
-    libclient2slpi.notifier \
     libcom.qti.chinodeutils \
     libcom.xiaomi.attribute \
     libcom.xiaomi.debug \
