@@ -566,7 +566,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/mi_gc_2.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/mi_gc_2.txt \
     vendor/xiaomi/vermeer/proprietary/odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/mi_gc_3.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/mi_gc_3.txt \
     vendor/xiaomi/vermeer/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_n11_42_02_0a_cmd_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_n11_42_02_0a_cmd_mode_dsc_dsi_panel.json \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/init.panel_info.sh:$(TARGET_COPY_OUT_ODM)/etc/init.panel_info.sh \
     vendor/xiaomi/vermeer/proprietary/odm/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.camera.provider-service_64.rc \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc \
     vendor/xiaomi/vermeer/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc \
     vendor/xiaomi/vermeer/proprietary/odm/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc \
     vendor/xiaomi/vermeer/proprietary/odm/etc/mdss_dsi_n11_42_02_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/mdss_dsi_n11_42_02_0a_dsc_cmd_mi.xml \
@@ -678,6 +680,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw882xx_acf.bin \
     vendor/xiaomi/vermeer/proprietary/odm/firmware/goodix_cfg_group_vermeer.bin:$(TARGET_COPY_OUT_ODM)/firmware/goodix_cfg_group_vermeer.bin \
     vendor/xiaomi/vermeer/proprietary/odm/firmware/goodix_firmware_vermeer.bin:$(TARGET_COPY_OUT_ODM)/firmware/goodix_firmware_vermeer.bin \
+    vendor/xiaomi/vermeer/proprietary/odm/firmware/vermeer_thp_config.ini:$(TARGET_COPY_OUT_ODM)/firmware/vermeer_thp_config.ini \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.sensormodule.vermeer_aac_gc16b3_front_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.vermeer_aac_gc16b3_front_ii.bin \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.sensormodule.vermeer_aac_ov16a1q_front.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.vermeer_aac_ov16a1q_front.bin \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.sensormodule.vermeer_aac_ovx8000_wide_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.vermeer_aac_ovx8000_wide_ii.bin \
@@ -868,6 +871,8 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libvpt_action_recognition_so \
     vendor_lib_rfsa_adsp_nearby_napp_header \
     vendor_lib_rfsa_adsp_nearby_so \
+    vendor.xiaomi.hw.touchfeature@1.0-impl \
+    vendor.xiaomi.hw.touchfeature@1.0-odm \
     com.qti.actuator.vermeer_aac_ovx8000_gt9764_wide_ii_actuator \
     com.qti.actuator.vermeer_ofilm_ovx8000_gt9764_wide_i_actuator \
     com.qti.eeprom.vermeer_aac_gc16b3_gt24p64e_front_ii_eeprom \
@@ -1212,7 +1217,10 @@ PRODUCT_PACKAGES += \
     libssccalapi@2.0 \
     libsupermoon \
     libswregistrationalgo \
+    libtensorflowlite_touch_c \
     libtfestriping \
+    libtouchreport \
+    libtouchsensor \
     libubifocus \
     libvideoBokeh \
     libvideoml \
@@ -1246,10 +1254,14 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.quickcamera@1.0-service.xml \
     vendor.xiaomi.hardware.vcamera.provider.xml \
     vendor.xiaomi.camera.aon-impl.xml \
+    vendor.xiaomi.hw.touchfeature@1.0-service.xml \
     vendor.xiaomi.sensor.citsensorservice@2.0-service.xml \
     vendor.xiaomi.sensor.communicate@1.0_manifest.xml \
     android.hardware.camera.provider@2.7-virtual-camera-service \
     vendor.xiaomi.hardware.quickcamera@1.0-service \
     vendor.qti.camera.provider-service_64 \
+    vendor.xiaomi.hw.touchfeature@1.0-service \
     vendor.xiaomi.sensor.citsensorservice@2.0-service \
-    vendor.xiaomi.sensor.communicate@1.0-service
+    vendor.xiaomi.sensor.communicate@1.0-service \
+    touch_report_debug \
+    toucheventcheck
