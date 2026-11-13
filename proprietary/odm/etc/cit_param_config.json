@@ -487,9 +487,9 @@
                         ]
                     },
                     {
-                        "name":"rearTele",
+                        "name":"rearMacro",
                         "fuseid_sysprop":[
-                            "vendor.camera.sensor.rearTele.fuseID"
+                            "vendor.camera.sensor.rearMacro.fuseID"
                         ]
                     }
                 ]
